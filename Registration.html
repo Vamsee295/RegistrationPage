@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Page</title>
+    <style>
+
+        body {
+            background-color: #f2f2f2;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+
+        input {
+            font-weight: Bold;
+        }
+        
+        form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+        .Submit {
+        background-color: white;
+        color: black;
+        height: 35px;
+        width: 80px;
+        margin-left : 10px;
+        cursor: pointer;
+        font-weight: bold;
+        font: bold;
+        border-radius: 6px;
+    }
+    .Submit:hover {
+        background-color: gray;
+        color: white;
+        font: bold;
+        font-size: bold;
+        border: none;
+    }
+    .Submit:active {
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .Details {
+        padding-left: 10px;
+            color: rgba(236, 9, 9, 0.911)
+    }
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend class="Details">Enter Your Details</legend>
+            <h2>Student Registration Form</h2>
+            Enter First Name:
+            <input type="text" placeholder="Enter the First Name" required><br><br>
+            Enter Last Name:
+            <input type="text" placeholder="Enter the Last Name" required><br><br>
+            Enter Password:
+            <input type="password" placeholder="Enter Password" required><br><br>
+            Confirm Password:
+            <input type="password" placeholder="Confirm Password" required><br><br>
+            Select Gender:
+            <input type="radio" name="gender" value="male" required> Male
+            <input type="radio" name="gender" value="Female" required> Female
+            <br><br>
+            Select Branch:
+            <select name="Branch" required><br><br>
+                <option value="CSE">CSE</option>
+                <option value="ECE">ECE</option>
+                <option value="EEE">EEE</option>
+                <option value="MECH">MECH</option>
+                <option value="CIVIL">CIVIL</option>
+                <option value="AIML">AIML</option>
+            </select><br><br>
+    
+            Enter Your Date Of Birth:
+            <input type="date" placeholder="Enter Date of Birth" required><br><br>
+            <input class="Submit" type="submit" value="Submit">
+            <p class="Details">By clicking Submit, you agree to our <a href="RegTerms.html">Terms and Conditions</a></p>
+        </fieldset>
+        
+    </form>
+</body>
+</html>
